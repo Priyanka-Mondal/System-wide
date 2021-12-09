@@ -1,0 +1,10 @@
+g++ -o orion_debug -Wl,--copy-dt-needed-entries -Wl,-rpath=/home/pm/Small-Client-SSE/third_party/crypto/library/lib -Wl,-rpath=/home/pm/Small-Client-SSE/third_party/db-parser/library/lib test_orion.o build/orion/AES.o build/orion/AVLTree.o build/orion/Bid.o build/orion/OMAP.o build/orion/ORAM.o build/orion/Orion.o build/orion/RAMStore.o build/utils/Utilities.o build/utils/logger.o build/utils/rocksdb_wrapper.o build/utils/utils.o -L/usr/local/lib -Lthird_party/crypto/library/lib -Lthird_party/db-parser/library/lib -lssl -lcrypto -lsse_crypto -lgrpc++_unsecure -lgrpc -lprotobuf -lpthread -ldl -lsse_dbparser -lrocksdb -lsnappy -lz -lbz2 -llz4 -lcryptopp
+
+
+g++ -o orion_debug -Wl,--copy-dt-needed-entries -Wl,-rpath=/home/pm/SSEc/third_party/crypto/library/lib -Wl,-rpath=/home/pm/SSEc/third_party/db-parser/library/lib test_orion.o build/orion/AES.o build/orion/AVLTree.o build/orion/Bid.o build/orion/OMAP.o build/orion/ORAM.o build/orion/Orion.o build/orion/RAMStore.o build/aux/db_generator.o build/utils/Utilities.o build/utils/logger.o build/utils/rocksdb_wrapper.o build/utils/utils.o -L/usr/local/lib -Lthird_party/crypto/library/lib -Lthird_party/db-parser/library/lib -lcrypto -lsse_crypto -lgrpc++_unsecure -lgrpc -lprotobuf -lpthread -ldl -lsse_dbparser -lrocksdb -lsnappy -lz -lbz2 -llz4 -lcryptopp
+
+
+
+g++ -o qos_debug -Wl,--copy-dt-needed-entries -Wl,-rpath=/home/pm/Small-Client-SSE/third_party/crypto/library/lib -Wl,-rpath=/home/pm/Small-Client-SSE/third_party/db-parser/library/lib test_qos.o build/qos/AES.o build/qos/AVLTree.o build/qos/Bid.o build/qos/Client.o build/qos/OMAP.o build/qos/ORAM.o build/qos/RAMStore.o build/qos/Server.o build/utils/Utilities.o build/utils/logger.o build/utils/rocksdb_wrapper.o build/utils/utils.o -L/usr/local/lib -Lthird_party/crypto/library/lib -Lthird_party/db-parser/library/lib -lssl -lcrypto -lsse_crypto -lgrpc++_unsecure -lgrpc -lprotobuf -lpthread -ldl -lsse_dbparser -lrocksdb -lsnappy -lz -lbz2 -llz4 -lcryptopp
+
+
